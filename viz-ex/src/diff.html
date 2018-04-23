@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Interactive Data Visualization of Thesaurus automatically generated from SketchEngine">
+    <meta name="keywords" lang="en" content="dataviz, interactive, data visualization, thesaurus, language, dictionary, natural language processing, d3, javascript, jquery">
+    <meta name="author" content="Lucia Kocincova (lucyia)">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/manifest.json">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" href="./img/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Search Engine -->
+    <meta name="description" content="Interactive Data Visualization of words differences automatically generated from data">
+    <meta name="image" content="./img/vizex_differences.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="VizEx">
+    <meta itemprop="description" content="Interactive Data Visualization of words differences automatically generated from data">
+    <meta itemprop="image" content="./img/vizex_differences.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VizEx">
+    <meta name="twitter:description" content="Interactive Data Visualization of words differences automatically generated from data">
+    <meta name="twitter:site" content="@_lucyia">
+    <meta name="twitter:creator" content="@_lucyia">
+    <meta name="twitter:image:src" content="./img/vizex_differences.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="VizEx">
+    <meta name="og:description" content="Interactive Data Visualization of words differences automatically generated from data">
+    <meta name="og:image" content="./img/vizex_differences.png">
+    <meta name="og:url" content="http://lucyia.github.io/words-viz/">
+    <meta name="og:site_name" content="VizEx">
+    <meta name="og:type" content="website">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Metrophobic">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>DataViz Words</title>
+
+  </head>
+  <body>
+
+    <div class="masthead clearfix menu">
+      <div class="inner">
+        <h1 class="masthead-brand">VizEx / Text Differences Explorations</h1>
+        <nav class="nav nav-masthead">
+          <a class="nav-link" href="./index.html">Similarities</a>
+          <a class="nav-link active" href="./diff.html">Differences</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row align-items-center">
+
+          <div class="col-md-12 col-lg-8 col-viz">
+            <div id="words-wrapper">
+              <span id="word-left" class="word-label">left</span>
+              <span class="word-label">vs</span>
+              <span id="word-right" class="word-label">right</span>
+            </div>
+            <div id="options-wrapper">
+              <a class="option active" data-value="0" title="for example: small book" href="javascript:void(0)">modifiers of ...</a>
+              <a class="option" data-value="1" title="for example: book has" href="javascript:void(0)">verbs with ... as subject</a>
+              <a class="option" data-value="2" title="for example: read a book " href="javascript:void(0)">verbs with ... as object</a>
+              <a class="option" data-value="3" title="for example: book and / or magazine" href="javascript:void(0)">words and / or ...</a>
+            </div>
+            <div id="viz-wrapper-diff"></div>
+            <div id="word-input-left-wrapper" class="word-input-wrapper form-group-input form-group row">
+              <input class="form-control word-input" type="text" id="word-input-left">
+            </div>
+            <div id="word-input-right-wrapper" class="word-input-wrapper form-group-input form-group row">
+              <input class="form-control word-input" type="text" id="word-input-right">
+            </div>
+            <button id="button-close" type="button" class="close button-word button-word-close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <button id="button-check" type="button" class="check button-word button-word-check" aria-label="Submit">
+              <span aria-hidden="true">✔</span>
+            </button>
+            <div class='notification'></div>
+            <div id="loading">
+              <svg width="300" height="300">
+                <circle class="loading__circle" cx="150" cy="150" r="1" fill="none" stroke="rgb(50, 200, 200)" stroke-width="10"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4 col-info">
+            <div class="inner info info-about">
+              <div class="heading">
+                <h2 class="info-intro-animate">What are differences<br />between ...?</h2>
+              </div>
+
+              <div class="about">
+                <h3 class="info-intro-animate">About</h3>
+                <p class="info-intro-animate">
+                  This interactive visualization shows you the differences based on the frequency and
+                  contextual relationship between two query words within the same dataset – this visualisation is
+                  especially useful for understanding and articulating the data landscape of close synonyms and
+                  antonyms, for example research vs experiment.
+                </p>
+              </div>
+            </div>
+
+            <div class="inner info info-about">
+              <h3 class="info-intro-animate">Key</h3>
+              <img src="legend_diff.svg" alt="legend" class="info-intro-animate info-key-diff" />
+            </div>
+
+            <div class="inner info info-about">
+              <div class="visual">
+                <h3 class="info-intro-animate">Interactivity</h3>
+                <p class="info-intro-animate">
+                  Two query words appear, one on each side of the visualisation, between them are words that have
+                  either a relationship or are used in context with the query words. The closer the word is to the
+                  center, the more it tends to be combined with both of the given words. The words that appear
+                  closest to the query words on the right / left shows the contextual closeness of the relationship
+                  with the query word.
+                </p>
+                <p class="info-intro-animate">
+                  The size of the circle and the text has a direct correlation to the frequently
+                  the word can be found in the dataset. You can see a detailed explanation by hovering over the words
+                  or by clicking on the circles surrounding the words.
+                </p>
+                <p class="info-intro-animate">
+                  To change the query, i.e. words, you can either click on a surrounding word or enter a new query
+                  word into search field. Simply click on a word on left or on right and a type field will appear,
+                  enabling you to enter new query words.
+                </p>
+              </div>
+
+              <div class="data">
+                <h3 class="info-intro-animate">Data</h3>
+                <p class="info-intro-animate">
+                  The differences were automatically generated based on algorithms that look for words which appear
+                  in contexts to the query words using corpus analysis
+                  tool <a href="//sketchengine.co.uk/" target="_blank">SketchEngine</a>.
+                </p>
+                <p class="info-intro-animate">
+                  The underlying data was taken from
+                  <a href="//acl-arc.comp.nus.edu.sg/" target="_blank">ACL Anthology Reference Corpus</a>,
+                  a collection of scientific papers about Computational Linguistics.
+                </p>
+              </div>
+
+              <div class="author">
+                <p class="info-intro-animate">Made with ✗ by <a href='//www.lucyia.com' target='_blank'>lucyia</a>
+                  in 2017.</p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./words-viz.js"></script>
+    <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59922d2ac9328f7d"></script> -->
+  </body>
+</html>

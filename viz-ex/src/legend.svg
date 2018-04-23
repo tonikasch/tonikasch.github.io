@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 543.5 258.4" style="enable-background:new 0 0 543.5 258.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:url(#SVGID_2_);stroke:#000000;stroke-miterlimit:10;}
+	.st2{mask:url(#SVGID_1_);}
+	.st3{fill:none;stroke:#1CB3B5;stroke-width:8;stroke-opacity:0.3;}
+	.st4{fill:none;stroke:#408AB1;stroke-width:8;stroke-opacity:0.3;}
+	.st5{fill:none;stroke:#7B60A5;stroke-width:8;stroke-opacity:0.3;}
+	.st6{fill:#FFFFFF;}
+	.st7{font-family:'Helvetica';}
+	.st8{font-size:21px;}
+	.st9{fill:#01B8B9;}
+	.st10{fill:#23A0B4;}
+	.st11{fill:#4388B0;}
+	.st12{fill:#656FAB;}
+	.st13{fill:#8459A7;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st15{fill:#1CB3B5;}
+	.st16{font-size:20.9903px;}
+	.st17{font-size:17.1323px;}
+	.st18{fill:#815AA0;}
+	.st19{font-size:33.7596px;}
+	.st20{font-size:25.4318px;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="94" y="-168.7" width="423.2" height="423.2">
+		
+			<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="94" y="-168.7" width="423.2" height="423.2" id="SVGID_1_">
+	<g class="st0">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="271.75" y1="-4.7376" x2="271.75" y2="258.4">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="4.338491e-02" style="stop-color:#D7D7D7;stop-opacity:4.338491e-02"/>
+			<stop  offset="9.934145e-02" style="stop-color:#AAAAAA;stop-opacity:9.934145e-02"/>
+			<stop  offset="0.161" style="stop-color:#818181;stop-opacity:0.161"/>
+			<stop  offset="0.2269" style="stop-color:#5E5E5E;stop-opacity:0.2269"/>
+			<stop  offset="0.2983" style="stop-color:#414141;stop-opacity:0.2983"/>
+			<stop  offset="0.377" style="stop-color:#292929;stop-opacity:0.377"/>
+			<stop  offset="0.4661" style="stop-color:#171717;stop-opacity:0.4661"/>
+			<stop  offset="0.5715" style="stop-color:#0A0A0A;stop-opacity:0.5715"/>
+			<stop  offset="0.7091" style="stop-color:#020202;stop-opacity:0.7091"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</linearGradient>
+		<rect y="-4.7" class="st1" width="543.5" height="263.1"/>
+	</g>
+</mask>
+<g class="st2">
+	<g transform="translate(150, 200)">
+		<g>
+			<circle id="tick-0.245_2_" class="st3" cx="155.6" cy="-157.1" r="89"/>
+			<circle id="tick-0.27_2_" class="st4" cx="155.6" cy="-157.1" r="148.3"/>
+			<circle id="tick-0.169_2_" class="st5" cx="155.6" cy="-157.1" r="207.6"/>
+		</g>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 413.5386 25.7163)" class="st6 st7 st8"> more similar</text>
+</g>
+<g>
+	<circle class="st9" cx="392.5" cy="43.7" r="9"/>
+	<circle class="st10" cx="422.5" cy="43.7" r="9"/>
+	<circle class="st11" cx="452.4" cy="43.7" r="9"/>
+	<circle class="st12" cx="482.3" cy="43.7" r="9"/>
+	<circle class="st13" cx="512.2" cy="43.7" r="9"/>
+</g>
+<g>
+	<g>
+		<path class="st14" d="M345.6,157.4c6.2,4.5,16.7,8.9,30.7,2.7"/>
+		<g>
+			<polygon class="st6" points="345,164.2 347.1,158.5 352.6,156 339.2,151.1 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 5.5451 224.2538)" class="st6 st7 st8">very similar</text>
+	<text transform="matrix(1 0 0 1 5.5451 249.2538)" class="st6 st7 st8">but not that frequent</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 5.5449 143.8732)" class="st6 st7 st8">loosely similar</text>
+	<text transform="matrix(1 0 0 1 5.5449 168.8732)" class="st6 st7 st8">but very frequent</text>
+</g>
+<g>
+	<circle id="word__circle-1_2_" class="st15" cx="305.6" cy="42.9" r="25.5"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 274.8138 48.9043)" class="st6 st7 st16">search</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 386.0386 74.5)" class="st6 st7 st8"> less similar</text>
+</g>
+<g>
+	<g>
+		<line class="st14" x1="516.1" y1="69.2" x2="499.4" y2="69.2"/>
+		<g>
+			<polygon class="st6" points="511.8,63.7 514.2,69.2 511.8,74.8 525,69.2 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<circle id="word__circle-1556_4_" class="st15" cx="223.3" cy="44.5" r="17.7"/>
+	<text id="word__text-1556_4_" transform="matrix(1 0 0 1 198.0067 49.8967)" class="st6 st7 st17">similar</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 384.6445 165.3405)" class="st6 st7 st8">frequency</text>
+</g>
+<g>
+	<g>
+		<circle id="word__circle-3424_2_" class="st18" cx="112.4" cy="63.2" r="36.5"/>
+	</g>
+	<g>
+		<text id="word__text-3424_2_" transform="matrix(1 0 0 1 53.0966 73.0209)" class="st6 st7 st19">frequent</text>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st14" x1="392.8" y1="20" x2="409.5" y2="20"/>
+		<g>
+			<polygon class="st6" points="397,25.5 394.7,20 397,14.4 383.9,20 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<circle id="word__circle-1556_3_" class="st9" cx="314.7" cy="124.9" r="32.2"/>
+	<text id="word__text-1556_3_" transform="matrix(1 0 0 1 292.3728 131.9073)" class="st6 st7 st20">size</text>
+</g>
+<g>
+	<g>
+		<path class="st14" d="M227.2,82c8.3,29.8,26.8,128-88.5,136.6"/>
+		<g>
+			<polygon class="st6" points="223,87.7 227.7,83.8 233.7,84.5 224.5,73.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st14" d="M167.9,97c6,11.1,12.2,31.9-15.4,43.7"/>
+		<g>
+			<polygon class="st6" points="165.3,103.6 168.8,98.7 174.7,97.7 163,89.5 			"/>
+		</g>
+	</g>
+</g>
+</svg>
